@@ -1,0 +1,62 @@
+header {
+  width: 100%;
+  position: relative;
+  background-color: #2b2727;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+header .main__nav {
+  width: 80%;
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  margin: 0 auto;
+}
+header .main__nav .main__nav-logo {
+  width: 50px;
+  color: #EA8C3C;
+}
+header .main__nav .main__nav-logo:hover {
+  fill: #db7218;
+}
+header .main__nav .main__nav-list {
+  display: flex;
+  margin-right: auto;
+}
+header .main__nav .main__nav-list li {
+  list-style: none;
+  margin: 0 2rem;
+  position: relative;
+}
+header .main__nav .main__nav-list li a {
+  text-decoration: none;
+  color: #EA8C3C;
+  font-size: 1.2rem;
+}
+header .main__nav .main__nav-list li a .arrow {
+  display: inline-block;
+  margin-bottom: -0.5rem;
+}
+header .main__nav .main__nav-list li a:hover {
+  color: #db7218;
+}
+header .main__nav .main__nav-insta {
+  margin-left: auto;
+  text-decoration: none;
+  color: #EA8C3C;
+  display: flex;
+  align-items: flex-end;
+}
+header .main__nav .main__nav-insta svg {
+  fill: #EA8C3C;
+}
+header .main__nav .main__nav-insta span {
+  margin-left: 0.7rem;
+}
+header .main__nav .main__nav-insta:hover {
+  color: #db7218;
+}
+header .main__nav .main__nav-insta:hover svg {
+  fill: #db7218;
+}

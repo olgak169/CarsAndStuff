@@ -1,0 +1,146 @@
+header {
+  width: 100%;
+  position: relative;
+  background-color: #2b2727;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+header .main__nav {
+  width: 80%;
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  margin: 0 auto;
+}
+header .main__nav .main__nav-logo {
+  width: 50px;
+  color: #EA8C3C;
+}
+header .main__nav .main__nav-logo:hover {
+  fill: #db7218;
+}
+header .main__nav .main__nav-list {
+  display: flex;
+  margin-right: auto;
+}
+header .main__nav .main__nav-list li {
+  list-style: none;
+  margin: 0 2rem;
+  position: relative;
+}
+header .main__nav .main__nav-list li a {
+  text-decoration: none;
+  color: #EA8C3C;
+  font-size: 1.2rem;
+}
+header .main__nav .main__nav-list li a .arrow {
+  display: inline-block;
+  margin-bottom: -0.5rem;
+}
+header .main__nav .main__nav-list li a:hover {
+  color: #db7218;
+}
+header .main__nav .main__nav-insta {
+  margin-left: auto;
+  text-decoration: none;
+  color: #EA8C3C;
+  display: flex;
+  align-items: flex-end;
+}
+header .main__nav .main__nav-insta svg {
+  fill: #EA8C3C;
+}
+header .main__nav .main__nav-insta span {
+  margin-left: 0.7rem;
+}
+header .main__nav .main__nav-insta:hover {
+  color: #db7218;
+}
+header .main__nav .main__nav-insta:hover svg {
+  fill: #db7218;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    background-color: lightblue;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Jura", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.main {
+  height: 92vh;
+  overflow: hidden;
+}
+.main .container {
+  display: flex;
+  height: 100%;
+  margin-left: 5rem;
+}
+.main .container .main__text {
+  flex: 1 40%;
+  align-self: center;
+}
+.main .container .main__text .main__text-title {
+  font-size: calc(14px + (40 - 14) * ((100vw - 300px) / (1600 - 300)));
+  margin: 2rem 0 3rem 0;
+  position: relative;
+  color: #333;
+}
+.main .container .main__text .main__text-title::before {
+  content: url("../img/main/symbols/gear.svg");
+  position: absolute;
+  width: 4em;
+  height: 4em;
+  top: -20px;
+  left: -30px;
+  z-index: -1;
+}
+.main .container .main__text .main__text-text {
+  line-height: calc(1.8em + (1.6 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+  font-size: calc(13px + (18 - 13) * ((100vw - 300px) / (1800 - 300)));
+  color: #333;
+  padding-bottom: 1rem;
+}
+.main .container .main__text .main__text-logos {
+  margin-top: 5rem;
+  display: flex;
+}
+.main .container .main__text .main__text-logos h2 {
+  font-weight: 500;
+  color: #555;
+  flex: 0 0 35%;
+}
+.main .container .main__text .main__text-logos img {
+  flex-basis: 70px;
+  width: 100%;
+  margin: 0 2rem;
+}
+.main .container .main__picture {
+  flex: 0 0 60%;
+  align-self: flex-end;
+  height: 100%;
+  margin-top: 5rem;
+  background-image: url("../img/main/Car02.png");
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    background-color: lightblue;
+  }
+}
