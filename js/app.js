@@ -36,3 +36,7 @@ $(document).ready(function(){
     adaptiveHeight: true
   });
 });
+
+$('.inner-img-sm').click(function() {
+  $('.works-inner-img-active').attr('src', $(this).attr('src'))
+})
