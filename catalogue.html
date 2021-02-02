@@ -1,133 +1,250 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css" />
- <title>Cars and Stuff Каталог</title>
-</head>
-<body>
- <header class="main-nav">
-  <nav class="nav under">
-    
-    <ul class="nav-list">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>Cars and Stuff Каталог</title>
+    </head>
+    <body>
+        <header class="main-nav">
+            <nav class="nav under">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link nav-logo"
+                            >Ford Garage</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a href="works.html" class="nav-link">Работы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link">Галерея</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link nav-link-active">Каталог</a>
+                    </li>
+                </ul>
+                <a href="#" class="nav-insta">
+                    <img
+                        src="./img/main/symbols/instagram.svg"
+                        alt="instagram logo"
+                    />
+                    <span>Для связи напишите в директ</span>
+                </a>
+            </nav>
+        </header>
+        <section class="catalogue">
+            <div class="wrapper">
+                <div class="row">
+                    <div class="menu-btn">
+                        <span>Разделы &#9782;</span>
+                    </div>
+                    <div class="side-menu">
+                        <div class="side-list">
+                            <div class="close-btn">
+                                <span>&#10005;</span>
+                            </div>
+                            <h3 class="side-title">Разделы</h3>
+                            <div class="side-item">
+                                <a href="#engine" class="side-link sub-btn"
+                                    >Двигатель<span class="dropdown"
+                                        >&#10095;</span
+                                    ></a
+                                >
+                                <div class="side-submenu" id="engine">
+                                    <a
+                                        href="#"
+                                        class="side-submenu-link sub-btn"
+                                        >Деталь 01
+                                        <span class="dropdown"
+                                            >&#10095;</span
+                                        ></a
+                                    >
+                                    <div class="side-submenu">
+                                        <a href="#" class="side-submenu-link"
+                                            >Item with a very very very long
+                                            name</a
+                                        >
+                                        <a href="#" class="side-submenu-link"
+                                            >Item 02</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="side-item">
+                                <a href="#gearbox" class="side-link sub-btn"
+                                    >КПП<span class="dropdown"
+                                        >&#10095;</span
+                                    ></a
+                                >
+                                <div class="side-submenu" id="gearbox">
+                                    <a href="#" class="side-submenu-link"
+                                        >Деталь 01</a
+                                    >
+                                    <a href="#" class="side-submenu-link"
+                                        >Деталь 02</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="side-item">
+                                <a href="#suspension" class="side-link sub-btn"
+                                    >Подвеска<span class="dropdown"
+                                        >&#10095;</span
+                                    ></a
+                                >
+                                <div class="side-submenu" id="suspension">
+                                    <a href="#" class="side-submenu-link"
+                                        >Деталь 01</a
+                                    >
+                                    <a href="#" class="side-submenu-link"
+                                        >Деталь 02</a
+                                    >
+                                    <a href="#" class="side-submenu-link"
+                                        >Деталь 03</a
+                                    >
+                                    <a href="#" class="side-submenu-link"
+                                        >Деталь 04</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="side-item">
+                                <a href="#body" class="side-link sub-btn"
+                                    >Кузов<span class="dropdown"
+                                        >&#10095;</span
+                                    ></a
+                                >
+                                <div class="side-submenu" id="body">
+                                    <a href="#" class="side-submenu-link"
+                                        >Деталь 01</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="side-item">
+                                <a href="#electric" class="side-link sub-btn"
+                                    >Электрика<span class="dropdown"
+                                        >&#10095;</span
+                                    ></a
+                                >
+                                <div class="side-submenu" id="electric">
+                                    <a href="#" class="side-submenu-link"
+                                        >Деталь 01</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="side-item">
+                                <a href="#tuning" class="side-link sub-btn"
+                                    >Тюнинг<span class="dropdown"
+                                        >&#10095;</span
+                                    ></a
+                                >
+                                <div class="side-submenu" id="tuning">
+                                    <a href="#" class="side-submenu-link"
+                                        >Деталь 01</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalogue-main">
+                        <h1 class="catalogue-title">
+                            Запасные части в категории подвеска
+                        </h1>
+                        <div class="catalogue-list">
+                            <div class="item">
+                                <img
+                                    class="item-img"
+                                    src="./img/catalogue/Eng copy 2.png"
+                                    alt=""
+                                />
+                                <span class="item-desc">Short description</span>
+                                <span class="item-price">Price: 20$</span>
+                            </div>
+                            <div class="item">
+                                <img
+                                    class="item-img"
+                                    src="./img/works/4R70W harness/4R70W harness1.jpeg"
+                                    alt=""
+                                />
 
-      <li class="nav-item"><a href="index.html" class="nav-link nav-logo">Ford Garage</a></li>
-      <li class="nav-item"><a href="#" class="nav-link nav-link-active">Каталог</a></li>
-      <li class="nav-item"><a href="works.html" class="nav-link">Работы</a></li>
-      <li class="nav-item"><a href="gallery.html" class="nav-link">Галерея</a></li>
-    </ul>
-    <a href="#" class="nav-insta">
-      <img src="./img/main/symbols/instagram.svg" alt="instagram logo">
-      <span>Для связи напишите в директ</span>
-    </a>
-  </nav>
-</header>
-<section class="catalogue">
- <div class="wrapper">
-  <div class="row">
-   <div class="side-menu">
-     <ul class="side-list">
-       <li class="side-item">
-         <a href="#engine" class="side-link">Двигатель</a>
-         <div class="side-submenu" id="engine">
-           <a href="#" class="side-submenu-link">Деталь 01</a>
-         </div>
-       </li>
-       <li class="side-item">
-         <a href="#gearbox" class="side-link">КПП</a>
-         <div class="side-submenu" id="gearbox">
-           <a href="#" class="side-submenu-link">Деталь 01</a>
-           <a href="#" class="side-submenu-link">Деталь 02</a>
-         </div>
-       </li>
-       <li class="side-item">
-         <a href="#suspension" class="side-link">Подвеска</a>
-         <div class="side-submenu" id="suspension">
-           <a href="#" class="side-submenu-link">Деталь 01</a>
-           <a href="#" class="side-submenu-link">Деталь 02</a>
-           <a href="#" class="side-submenu-link">Деталь 03</a>
-           <a href="#" class="side-submenu-link">Деталь 04</a>
-         </div>
-       </li>
-       <li class="side-item">
-         <a href="#body" class="side-link">Кузов</a>
-         <div class="side-submenu" id="body">
-           <a href="#" class="side-submenu-link">Деталь 01</a>
-           
-         </div>
-       </li>
-       <li class="side-item">
-         <a href="#electric" class="side-link">Электрика</a>
-         <div class="side-submenu" id="electric">
-           <a href="#" class="side-submenu-link">Деталь 01</a>
-           
-         </div>
-       </li>
-       <li class="side-item">
-         <a href="#tuning" class="side-link">Тюнинг</a>
-         <div class="side-submenu" id="tuning">
-           <a href="#" class="side-submenu-link">Деталь 01</a>
-           
-         </div>
-       </li>
-     </ul>
-   </div>
-   <div class="catalogue-main">
-    <h1 class="catalogue-title">Запасные части в категории подвеска</h1>
-    <div class="catalogue-list">
-      <div class="item">
-        <img class="item-img" src="./img/catalogue/Eng copy 2.png" alt="">
-        <span class="item-desc">Short description</span> 
-        <span class="item-price">Price: 20$</span>
-      </div>
-      <div class="item">
-        <img class="item-img" src="./img/works/4R70W harness/4R70W harness1.jpeg" alt="">
-        
-        <span class="item-desc">Long description. Very very very long description.</span>
-        <span class="item-price">Price: 150$</span>
-      
-      </div>
-      <div class="item">
-        <img class="item-img" src="./img/works/4R70W harness/4R70W harness3.jpeg" alt="">
-        <span class="item-desc">Some detailed description</span>
-        <span class="item-price">Price: 15$</span>
-      </div>
-      <div class="item">
-        <img class="item-img" src="./img/works/4R70W harness/4R70W harness4.jpeg" alt="">
-        <span class="item-desc">Description of the part. Detailed and long.....</span>
-        <span class="item-price">Price: 330$</span>
-      </div>
-      <div class="item">
-        <img class="item-img" src="./img/works/4R70W harness/4R70W harness5.jpeg" alt="">
-        <span class="item-desc">Short description</span>
-        <span class="item-price">Price: 10$</span>
-      </div>
-      <div class="item">
-        <img class="item-img" src="./img/works/4R70W harness/4R70W harness6.jpeg" alt="">
-        <span class="item-desc">Shortest description</span>
-        <span class="item-price">Price: 90$</span>
-      </div>
-      <div class="item">
-        <img class="item-img" src="./img/works/4R70W harness/4R70W harness7.jpeg" alt="">
-        <span class="item-desc">Short description and name.</span>
-        <span class="item-price">Price: 50$</span>
-      </div>
-    </div>
-   </div>
-  </div>
- </div>
-</section>
+                                <span class="item-desc"
+                                    >Long description. Very very very long
+                                    description.</span
+                                >
+                                <span class="item-price">Price: 150$</span>
+                            </div>
+                            <div class="item">
+                                <img
+                                    class="item-img"
+                                    src="./img/works/4R70W harness/4R70W harness3.jpeg"
+                                    alt=""
+                                />
+                                <span class="item-desc"
+                                    >Some detailed description</span
+                                >
+                                <span class="item-price">Price: 15$</span>
+                            </div>
+                            <div class="item">
+                                <img
+                                    class="item-img"
+                                    src="./img/works/4R70W harness/4R70W harness4.jpeg"
+                                    alt=""
+                                />
+                                <span class="item-desc"
+                                    >Description of the part. Detailed and
+                                    long.....</span
+                                >
+                                <span class="item-price">Price: 330$</span>
+                            </div>
+                            <div class="item">
+                                <img
+                                    class="item-img"
+                                    src="./img/works/4R70W harness/4R70W harness5.jpeg"
+                                    alt=""
+                                />
+                                <span class="item-desc">Short description</span>
+                                <span class="item-price">Price: 10$</span>
+                            </div>
+                            <div class="item">
+                                <img
+                                    class="item-img"
+                                    src="./img/works/4R70W harness/4R70W harness6.jpeg"
+                                    alt=""
+                                />
+                                <span class="item-desc"
+                                    >Shortest description</span
+                                >
+                                <span class="item-price">Price: 90$</span>
+                            </div>
+                            <div class="item">
+                                <img
+                                    class="item-img"
+                                    src="./img/works/4R70W harness/4R70W harness7.jpeg"
+                                    alt=""
+                                />
+                                <span class="item-desc"
+                                    >Short description and name.</span
+                                >
+                                <span class="item-price">Price: 50$</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<div class="modal">
-  <button class="close-modal">&times;</button>
-  <img class="modal-img" src="" alt="">
-  <p class="modal-desc"></p>
-  <p class="modal-price"></p>
-</div>
-<div class="overlay"></div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="./js/app.js"></script>
-</body>
+        <div class="modal">
+            <button class="close-modal">&times;</button>
+            <img class="modal-img" src="#" alt="" />
+            <p class="modal-desc"></p>
+            <p class="modal-price"></p>
+        </div>
+        <div class="overlay"></div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./js/app.js"></script>
+    </body>
 </html>
