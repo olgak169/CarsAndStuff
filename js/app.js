@@ -84,7 +84,7 @@ $(".inner-img-sm").click(function () {
 });
 // side menu
 $(".sub-btn").click(function () {
-    $(this).next(".side-submenu").slideToggle();
+    $(this).siblings(".side-submenu").slideToggle();
     $(this).find(".dropdown").toggleClass("rotate");
     $(this).toggleClass("active");
 });
@@ -98,4 +98,20 @@ $(".menu-btn").click(function () {
 $(".close-btn").click(function () {
     $(".side-menu").removeClass("active");
     $(".menu-btn").css("visibility", "visible");
+});
+
+// admin sidenav
+$(".nav-btn").on("click", function () {
+    $(this).next(".admin-nav-links").slideToggle();
+    let x = $(this).find(".nav-btn-icon");
+    $(this).toggleClass("active");
+    if ($(this).hasClass("active")) {
+        x.html("&#8722;");
+    } else {
+        x.html("&#43;");
+    }
+});
+// admin cat nav in products
+$(".p-cat-btn").on("click", function () {
+    $(this).next(".p-cat-list").slideToggle();
 });
